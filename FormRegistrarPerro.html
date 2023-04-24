@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistema de Identificacion Perruno</title>
+</head>
+<body>
+	<div style='text-align:center;'>
+		<form action="Registrar_perro.php" method="GET">
+			<h1>Sistema de Identificacion Perruno</h1>
+			<label>Ingresar Codigo</label>
+			<input name="Codigo" type="text"><br><br>
+			<label>Ingresar Nombre</label>
+			<input name="Nombre" type="text"><br><br>
+			<label>Fecha de Nacimiento</label>
+			<input name="FechNac" type="date"><br><br>
+			<label>Genero</label>
+			<input name="Genero" type="radio" value="Macho">Macho
+			<input name="Genero" type="radio" value="Hembra">Hembra<br><br>
+			<label>Seleccione Raza</label>
+			<select name="Raza">
+				<option value="Pitbull">Pitbull</option>
+				<option value="Bulldog">Bulldog</option>
+				<option value="Shichu">Shichu</option>
+				<option value="Pequines">Pequines</option>
+				<option value="San Bernardo">San Bernardo</option>
+				<option value="Chiguahua">Chiguahua</option>
+			</select><br><br>
+			<label>Subir Foto</label>
+			<input type="text" name="Foto"><br><br>
+			<input name="Registrar" type="submit" value="Registrar">
+			<input type="submit" value="Cancelar"><br><br>
+		</form>
+		
+		<br><br>
+		
+		<form action="Consultar_perro.php" method="GET"> 
+			<h1>Sistema de Identificacion Perruno</h1>
+			<label>Ingresar Nombre a buscar</label> 
+			<input type="text" name="Nombre"><br><br>
+			<input type="submit" value="Buscar"> 
+		</form>
+		
+		<br><br>
+	
+
+		
+	</div>
+</body>
+</html>
